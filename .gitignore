@@ -1,5 +1,14 @@
 figmatokens/node_modules
 figmatokens/config.json
 figmatokens/package.json
+figmatokens/node_modules
+figmatokens/figma-tool-app
+figmatokens/my-app
+
 
 sfcc-watch
+
+app_custom_figma/node_modules
+app_custom_figma/dw.json
+app_custom_figma/package-lock.json
+app_custom_figma/package.json

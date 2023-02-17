@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <style>
+        button {
+            padding: 10px 5px;
+            background: blue;
+            color: white;
+            border-radius: 3px;
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button id="pull-button">Pull from Repo</button>
+        <button id="compile-button">style converter</button>
+        <button id="run-server">Run server</button>
+    </div>
+    <script>
+        document.getElementById("pull-button").addEventListener("click", () => {
+            fetch('http://localhost:3001/pullrepo', {
+            method: "POST"
+            })
+        })
+        document.getElementById("compile-button").addEventListener("click", () => {
+            fetch('http://localhost:3001/converter', {
+            method: "POST"
+            })
+        })
+        document.getElementById("run-server").addEventListener("click", () => {
+            fetch('http://localhost:3001/runserver', {
+            method: "POST"
+            })
+        })
+    </script>
+</body>
+</html>
